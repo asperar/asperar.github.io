@@ -1,0 +1,10 @@
+name: ci
+on:
+  push:
+
+jobs:
+  qemu:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Docker Setup QEMU
+        uses: docker/setup-qemu-action@v4
